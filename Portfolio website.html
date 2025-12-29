@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahal | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav h1 {
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text span {
+      color: #38bdf8;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 250px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      color: #cbd5f5;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 15px;
+      color: #94a3b8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-text h2 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Ahal</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <div class="hero-text">
+    <h2>Hello, I'm <span>Ahalya Ramthas</span></h2>
+    <p>
+      I'm a student and aspiring developer interested in Web Development,
+      DBMS, and Computer Science fundamentals, Machine learning. I enjoy learning and building
+      projects step by step.
+    </p>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h3>Skills</h3>
+  <div class="skills">
+    <div class="card">
+      <h4>HTML</h4>
+      <p>Semantic & responsive layouts</p>
+    </div>
+    <div class="card">
+      <h4>CSS</h4>
+      <p>Flexbox, Grid, Responsive design</p>
+    </div>
+    <div class="card">
+      <h4>DBMS</h4>
+      <p>SQL, Keys, Normalization</p>
+    </div>
+    <div class="card">
+      <h4>Basics of Programming</h4>
+      <p>C / Python fundamentals</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="projects">
+    <div class="card">
+      <h4>Portfolio Website</h4>
+      <p>Responsive personal website using HTML & CSS</p>
+    </div>
+    <div class="card">
+      <h4>DBMS Mini Project</h4>
+      <p>Student / Bike database using SQL</p>
+    </div>
+    <div class="card">
+      <h4>College Assignments</h4>
+      <p>Physics, CPS, Digital Electronics work</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Contact Me</h3>
+  <p>Email: ahalyar.al24@bitsathy.ac.in</p>
+  <p>Phone: +91 9345308440</p>
+  <p>Location: India</p>
+</section>
+
+<footer>
+  <p>© 2025 Ahal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
